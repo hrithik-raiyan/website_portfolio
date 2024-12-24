@@ -2,6 +2,9 @@ import streamlit as st
 from PIL import Image
 from pathlib import Path
 
+# Display the text "I love you" in bold
+st.markdown('*<p style="color:red; font-size:15px;">Only one file is deployed as github failed to upload files over 50 mb</p>*', unsafe_allow_html=True)
+
 st.title("PROJECT 02_CONSTRUCTION DRAWING")
 st.markdown('*<p style="color:grey; font-size:25px;">ARCH 314 | WORKING DRAWING | LEVEL 3, TERM 2 | JANUARY 2023</p>*', unsafe_allow_html=True)
 
