@@ -19,7 +19,6 @@ st.markdown('**<p style="color:orange; font-size:25px;">WORKING DRAWING SHEETS</
 st.caption('*Here are 3 set slides witch contains 3 drawings each*.')
 
 
-
 # List of image paths for each slider (ensure you have at least 3 images per slider)
 image_paths_slider_1 = [
     r"_Source Images\WD_1901027_RE_FLOOR AND WALL FINISH_Page_2.png",
@@ -39,6 +38,10 @@ image_paths_slider_3 = [
     r"_Source Images\WD_1901027_RE_WALL LAYOUT_Page_6.png",
 ]
 
+# Load images for each slider
+images_slider_1 = [Image.open(img) for img in image_paths_slider_1]
+images_slider_2 = [Image.open(img) for img in image_paths_slider_2]
+images_slider_3 = [Image.open(img) for img in image_paths_slider_3]
 
 # Create 3 columns for the sliders and images
 cols = st.columns(3)
