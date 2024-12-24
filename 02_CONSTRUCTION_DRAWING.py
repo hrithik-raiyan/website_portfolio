@@ -39,10 +39,6 @@ image_paths_slider_3 = [
     r"_Source Images\WD_1901027_RE_WALL LAYOUT_Page_6.png",
 ]
 
-# Load images for each slider
-images_slider_1 = [Image.open(img) for img in image_paths_slider_1]
-images_slider_2 = [Image.open(img) for img in image_paths_slider_2]
-images_slider_3 = [Image.open(img) for img in image_paths_slider_3]
 
 # Create 3 columns for the sliders and images
 cols = st.columns(3)
