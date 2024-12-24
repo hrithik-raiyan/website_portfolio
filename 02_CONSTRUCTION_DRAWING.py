@@ -18,21 +18,6 @@ st.markdown(
 st.markdown('**<p style="color:orange; font-size:25px;">WORKING DRAWING SHEETS</p>**', unsafe_allow_html=True)
 st.caption('*Here are 3 set slides witch contains 3 drawings each*.')
 
-# List of image paths (make sure you have at least 12 images)
-image_paths = [
-    r"_Source Images\_Workshop_Sheet 01.jpg",
-    r"_Source Images\_Workshop_Sheet 02.jpg",
-    r"_Source Images\_Workshop_Sheet 03.jpg",
-    r"_Source Images\_Workshop_Sheet 04.jpg",
-    r"_Source Images\_Workshop_Sheet 05.jpg",
-    r"_Source Images\_Workshop_Sheet 06.jpg",
-    r"_Source Images\_Workshop_Sheet 07.jpg",
-    r"_Source Images\_Workshop_Sheet 08.jpg",
-    r"_Source Images\_Workshop_Sheet 09.jpg",
-    r"_Source Images\_Workshop_Sheet 10.jpg",
-    r"_Source Images\_Workshop_Sheet 11.jpg",
-    r"_Source Images\_Workshop_Sheet 12.jpg",
-]
 
 
 # List of image paths for each slider (ensure you have at least 3 images per slider)
