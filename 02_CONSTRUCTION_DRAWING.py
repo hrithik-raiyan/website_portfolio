@@ -76,20 +76,28 @@ st.markdown("<hr style='border: 2px solid orange;'/>", unsafe_allow_html=True)
 st.markdown('**<p style="color:orange; font-size:25px;">WORKING DRAWING PORTFOLIO</p>**', unsafe_allow_html=True)
 st.caption('*Here are hyperlinks and a QR code is added for interactive purposes.*')
 
+# URL to be converted into a QR code
 url = "https://drive.google.com/file/d/1oxqdaRxbv5et8CXhKhN-jjfQCu_IZwgd/view?usp=drive_link"
-# Adjusted QR Code image path
-qr_code_image_path = r"_Source Images\_WD_QR CODE.png"
 
+# Correct QR Code image path
+qr_code_image_path = BASE_DIR / "_WD_QR CODE.png"
 
 # QR Code Display
 frame_size = 192
 st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
-if qr_code_image_path.exists():
-    qr_image = Image.open(qr_code_image_path)
-    st.image(qr_image, caption="Scan this QR code to open the link", width=frame_size)
+
+# Check if the QR code image exists
+if qr_code_image_path.is_file():
+    try:
+        qr_image = Image.open(qr_code_image_path)
+        st.image(qr_image, caption="Scan this QR code to open the link", width=frame_size)
+    except Exception as e:
+        st.error(f"Failed to load QR Code image: {qr_code_image_path} - {e}")
 else:
     st.error(f"QR Code image not found at {qr_code_image_path}")
-st.markdown("</div>", unsafe_allow_html=True)
 
+st.markdown("</div>", unsafe_allow_html=True)
 st.write(f"*[Or click to view full Working Drawing book.]({url})*")
+
+# Divider
 st.markdown("<hr style='border: 2px solid black;'/>", unsafe_allow_html=True)
