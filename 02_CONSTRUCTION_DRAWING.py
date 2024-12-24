@@ -77,7 +77,7 @@ st.markdown('**<p style="color:orange; font-size:25px;">WORKING DRAWING PORTFOLI
 st.caption('*Here are hyperlinks and a QR code is added for interactive purposes.*')
 
 url = "https://drive.google.com/file/d/1oxqdaRxbv5et8CXhKhN-jjfQCu_IZwgd/view?usp=drive_link"
-qr_code_image_path = Path(r"/mount/src/website_portfolio/_Page Files/_WD_QR CODE.png")
+qr_code_image_path = Path(r"_Source Images\_WD_QR CODE.png")
 
 # QR Code Display
 frame_size = 192
